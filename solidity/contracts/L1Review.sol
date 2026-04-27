@@ -1,11 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.28;
 
-/// @title ReviewStorageExperiment (L1 only)
-/// @notice Scrittura in storage con validazioni:
-//          - caratteri del testo: solo ASCII stampabili [32..126]
-//          - rating: [1..5]
-//          - lunghezza massima del testo: <= 512
 contract L1Review {
     struct ReviewData {
         uint8 rating;   // 1..5
